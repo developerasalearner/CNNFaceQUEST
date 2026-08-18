@@ -1,0 +1,25 @@
+# macOS metadata (creates a spurious ".DS" class in the dataset)
+.DS_Store
+**/.DS_Store
+__MACOSX/
+
+# Captured face data — personal, and regenerable via collect_data.py.
+# The .gitkeep exceptions keep the empty folders in the repo.
+images/*
+!images/.gitkeep
+
+# Pickled dataset — regenerable via consolidated_data.py, and images.p
+# exceeds GitHub's 100 MB per-file limit.
+CLEAN_DATA/*
+!CLEAN_DATA/.gitkeep
+
+# Generated output
+attendance.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
+env/
